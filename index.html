@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"> 
- <head> 
+<head> 
   <meta charset="UTF-8"> 
   <title>Landing Page with YouTube Video</title> 
   <style>
@@ -8,7 +8,7 @@
       margin: 0;
       padding: 0;
       background-color: #000;
-      color: #000;
+      color: #fff;
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
@@ -55,6 +55,10 @@
       display: none;
       color: #000;
       margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
     }
 
     #code h2 {
@@ -68,18 +72,14 @@
     }
 
     p {
-      color: #000;
-    }
-
-    #adContainer {
-      display: none;
+      color: #fff;
     }
   </style> 
- </head> 
- <body> 
+</head> 
+<body> 
   <div id="loader"> 
-   <div class="spinner"></div> 
-   <p>Loading, please wait...</p> 
+    <div class="spinner"></div> 
+    <p>Loading, please wait...</p> 
   </div> 
 
   <div id="videoContainer"> 
@@ -100,14 +100,13 @@
       loader.style.display = 'none';
       videoContainer.style.display = 'block';
 
-      // Show code after 46 seconds
+      // Show code after 30 seconds
       setTimeout(() => {
         codeDiv.style.display = 'block';
-      }, 46000);
+      }, 30000);
 
     }, 5000);
   </script> 
- </body>
-</html>
- 
+</body>
+</html> 
   
