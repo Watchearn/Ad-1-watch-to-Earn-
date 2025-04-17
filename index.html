@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Landing Page with YouTube Video</title> 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #000;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    #loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #videoContainer {
+      display: none;
+      text-align: center;
+    }
+
+    iframe {
+      width: 800px;
+      height: 450px;
+      border: none;
+    }
+
+    #code {
+      display: none;
+      color: #000;
+      margin-top: 30px;
+    }
+
+    #code h2 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    #code span {
+      font-size: 100px;
+      font-weight: 900;
+    }
+
+    p {
+      color: #000;
+    }
+
+    #adContainer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <div id="loader"> 
+   <div class="spinner"></div> 
+   <p>Loading, please wait...</p> 
+  </div> 
+  <div id="videoContainer"> <iframe id="ytVideo" src="https://www.youtube.com/embed/d95PPykB2vE?autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen> </iframe> 
+   <div id="code"> 
+    <h2>Today code is</h2> <span>823</span> 
+   </div> 
+  </div> 
+  <div id="adContainer"> 
+   <script async data-cfasync="false" src="//pl26404062.profitableratecpm.com/024277386af6100c867a764d9f75a317/invoke.js"></script> 
+   <div id="container-024277386af6100c867a764d9f75a317"></div> 
+  </div> 
+  <script>
+    const loader = document.getElementById('loader');
+    const videoContainer = document.getElementById('videoContainer');
+    const codeDiv = document.getElementById('code');
+
+    // Show loader for 5 seconds
+    setTimeout(() => {
+      loader.style.display = 'none';
+      videoContainer.style.display = 'block';
+
+      // Show code after 46 seconds
+      setTimeout(() => {
+        codeDiv.style.display = 'block';
+      }, 46000);
+
+    }, 5000);
+  </script> 
+  <script async data-cfasync="false" src="//pl26404062.profitableratecpm.com/024277386af6100c867a764d9f75a317/invoke.js"></script> 
+  <div id="container-024277386af6100c867a764d9f75a317"></div>
+ </body>
+</html>
