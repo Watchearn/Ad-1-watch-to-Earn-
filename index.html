@@ -72,10 +72,7 @@
     }
 
     #adContainer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
+      display: none;
     }
   </style> 
  </head> 
@@ -84,15 +81,15 @@
    <div class="spinner"></div> 
    <p>Loading, please wait...</p> 
   </div> 
-  <div id="videoContainer"> <iframe id="ytVideo" src="https://www.youtube.com/embed/d95PPykB2vE?autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen> </iframe> 
-   <div id="code"> 
-    <h2>Today code is</h2> <span>823</span> 
-   </div> 
+
+  <div id="videoContainer"> 
+    <iframe id="ytVideo" src="https://www.youtube.com/embed/d95PPykB2vE?autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+    <div id="code"> 
+      <h2>Today code is</h2> 
+      <span>823</span> 
+    </div> 
   </div> 
-  <div id="adContainer"> 
-   <script async data-cfasync="false" src="//pl26404062.profitableratecpm.com/024277386af6100c867a764d9f75a317/invoke.js"></script> 
-   <div id="container-024277386af6100c867a764d9f75a317"></div> 
-  </div> 
+
   <script>
     const loader = document.getElementById('loader');
     const videoContainer = document.getElementById('videoContainer');
@@ -110,4 +107,7 @@
 
     }, 5000);
   </script> 
+ </body>
+</html>
+ 
   
